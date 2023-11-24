@@ -1,0 +1,26 @@
+@keyframes entranceText {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.phrase {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ff6208;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    line-height: 1.5;
+    text-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+    @media (min-width: 768px) {
+        font-size: 2rem;
+    }
+    animation: entranceText 1s ease-in-out 0s 1 normal forwards;
+}

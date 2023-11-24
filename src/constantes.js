@@ -1,16 +1,32 @@
 const FRASES = [
-    "Hola, soy Goku y estás viendo Disney Channel",
-    "Hermosa mañana, ¿verdad?",
-    "Sierra de los Padres: agua mineral natural de las sierras",
-    "Ya basta freezer !!!",
-    "Me convertiré en un luchador Bakugan",
-    "Quiero un pancho",
-    "Ven y enfrentate al temible pancho pistola",
-    "No quiero que te enojes si corrijo los relojes pu pu pi pu pu pu pu pi pi pu",
-    "Jumanji",
-    "Helado de jamón y quesoooo",
-    "Crema manicera yummy !!",
-    "El León y el Pato se han unido"
+    {
+        text: "El dinero no me hace feliz, me hace falta",
+        author: "Goku"
+    },
+    {
+        text: "Mirar una pared es como mirar una ventana, pero en vez de una ventana es una pared",
+        author: "El Joker"
+    },
+    {
+        text: "La unica manera de aplaudir es teniendo dos manos",
+        author: "Pepe Carlos"
+    },
+    {
+        text: "Lo que no te mata, te deja vivo",
+        author: "Anonimo"
+    },
+    {
+        text: "Cuando estás triste, no estás feliz",
+        author: "Tobias Nosequé"
+    },
+    {
+        text: "A veces quisiera tirar la toalla, pero luego con que me seco",
+        author: "Anonimo"
+    },
+    {
+        text: "Todos somos pasajeros, menos el chofer",
+        author: "Yanina Aninay"
+    }
 ];
 
 export default FRASES;
