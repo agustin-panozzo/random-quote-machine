@@ -1,13 +1,15 @@
 import { createSlice } from '@reduxjs/toolkit';
+import frases from '../constantes';
 
 export const phraseSlice = createSlice({
     name: 'phrase',
     initialState: {
-        value: ''
+        value: '2 + 2 = 4'
     },
     reducers: {
-        changePhrase: (state, action) => {
-            state.value = action.payload;
+        changePhrase: (state) => {
+            const index = Math.floor(Math.random() * frases.length);
+            state.value = frases[index];
         }
     }
 });
