@@ -7,7 +7,7 @@ import Footer from './footerBlock.js';
 
 const QuoteBlock = () => {
     const color = useSelector(state => state.phrase.color);
-
+    
     return (
         <div>
             <div className='wrapper' style={{ backgroundColor: color }}>
