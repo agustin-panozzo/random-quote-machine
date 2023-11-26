@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 @keyframes entranceText {
 	0% {
 		opacity: 0;
@@ -8,19 +10,101 @@
 	}
 }
 
-.phrase {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #ff6208;
-    text-align: center;
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    line-height: 1.5;
-    text-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
-    @media (min-width: 768px) {
-        font-size: 2rem;
-    }
-    animation: entranceText 1s ease-in-out 0s 1 normal forwards;
+}
+
+body {
+    background: linear-gradient(to bottom, #e6e6e6, #ffffff);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    transition: background-color 1s ease-in-out;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+    justify-content: space-around;
+    min-height: 400px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.icons {
+    list-style: none;
+    display: flex;
+    padding: 30px 0 0 40px;
+}
+
+.icons li {
+    margin-right: 15px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-container h1 {
+    font-size: 25px;
+    font-style: italic;
+    padding: 20px 20px 0 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    animation: entranceText 1s ease-in-out;
+}
+
+#author {
+    font-size: 20px;
+    padding: 0 20px 20px 20px;
+    text-align: end;
+    animation: entranceText 1s ease-in-out;
+    font-weight: bold;
+    animation: entranceText 1s ease-in-out;
+}
+
+.btn-container {
+    display: flex;
+    padding: 0 20px 20px 0;
+    justify-content: flex-end;
+}
+
+.quote-btn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.quote-btn:hover {
+    background-color: #2980b9;
+}
+
+.quote-btn:active {
+    background-color: #2980b9;
+    transform: translateY(2px);
+}
+
+.footer-container {
+    margin-top: 20px;
+}
+
+#tweet-quote, #instagram-quote {
+    transition: color 0.5s ease-in-out;
 }

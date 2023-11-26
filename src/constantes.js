@@ -1,4 +1,4 @@
-const FRASES = [
+const PHRASES = [
     {
         text: "El dinero no me hace feliz, me hace falta",
         author: "Goku"
@@ -16,7 +16,7 @@ const FRASES = [
         author: "Anonimo"
     },
     {
-        text: "Cuando estás triste, no estás feliz",
+        text: "Cuando estas triste, no estas feliz",
         author: "Tobias Nosequé"
     },
     {
@@ -29,4 +29,21 @@ const FRASES = [
     }
 ];
 
-export default FRASES;
+const COLORS = [
+    '#16a085',
+    '#27ae60',
+    '#2c3e50',
+    '#f39c12',
+    '#e74c3c',
+    '#9b59b6',
+    '#FB6964',
+    '#342224',
+    '#472E32',
+    '#BDBB99',
+    '#77B1A9',
+    '#73A857'
+];
+
+export const colors = COLORS;
+
+export default PHRASES;

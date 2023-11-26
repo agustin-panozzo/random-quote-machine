@@ -10,7 +10,9 @@ import { BsTwitterX } from "react-icons/bs";
 const QuoteBlock = () => {
     const text = useSelector(state => state.phrase.text);
     const author = useSelector(state => state.phrase.author);
+    const color = useSelector(state => state.phrase.color);
     const dispatch = useDispatch();
+    console.log(color);
 
     useEffect(() => {
         const clickSound = new Howl({
@@ -29,15 +31,34 @@ const QuoteBlock = () => {
 
     return (
         <div>
-            <div id='quote-box'>
-                <h1 className={`phrase`} key={animationKey} id='text'><strong><FaQuoteLeft size={30} /> {text} <FaQuoteRight size={30} /></strong></h1>
-                <p id='author'>- <i>{author}</i></p>
-                <button id='new-quote' onClick={() => dispatch(changePhrase())}>
-                    Nueva Frase
-                </button>
-                <a id='tweet-quote' href='https://x.com' target='_blank' rel="noopener noreferrer"><BsTwitterX size={32}/></a>
-                <a id="instagram-quote" href='https://instagram.com' target='_blank' rel="noopener noreferrer"><FaInstagram size={32}/></a>
+            <div className='wrapper' style={{ backgroundColor: color }}>
+
+                <div id='quote-box' className='flex-container'>
+                    <ul className='icons'>
+                        <li><a style={{ color: color }} id='tweet-quote' href='https://x.com' target='_blank' rel="noopener noreferrer"><BsTwitterX size={32}/></a></li>
+                        <li><a style={{ color: color }} id="instagram-quote" href='https://instagram.com' target='_blank' rel="noopener noreferrer"><FaInstagram size={32}/></a></li>
+                    </ul>
+
+                    <div key={animationKey} className='text-container'>
+                        <h1 id='text' style={{ color: color }}><span><FaQuoteLeft size={25} /> {text} <FaQuoteRight size={25} /></span></h1>
+                        <p id='author' style={{ color: color }}>- <i>{author}</i></p>
+                    </div>
+
+                    <div className='btn-container'>
+                        <button id='new-quote' className='quote-btn' onClick={() => dispatch(changePhrase())}>
+                            Nueva Frase
+                        </button>
+                    
+                    </div>
+                
+                </div>
+
+                <div className='footer-container'>
+                    <p className='footer'>Created by:<strong> Agustín Panozzo</strong></p>
+                </div>
+            
             </div>
+        
         </div>
     )
 };
