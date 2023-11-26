@@ -108,3 +108,17 @@ body {
 #tweet-quote, #instagram-quote {
     transition: color 0.5s ease-in-out;
 }
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: #000;
+}
+
+#name {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    margin-left: 5px;
+}
