@@ -35,3 +35,5 @@ La gestión del estado se realiza con Redux. Aquí están los archivos relaciona
 ### 2. store.js
 
 `store.js` configura la store de Redux utilizando el reducer de `phrase`.
+
+*Nota: Es posible compartir la frase a través de X (ex twitter) clickeando en el icono de X
